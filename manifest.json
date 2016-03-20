@@ -9,7 +9,7 @@
 
   "applications": {
     "gecko": {
-      "id": "github-fill-from-pivotal",
+      "id": "github-fill-from-pivotal@bwr.addons.mozilla.org",
       "strict_min_version": "45.0.0"
     }
   },
