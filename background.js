@@ -9,7 +9,7 @@ function requestPivotalStories(onResult) {
   var pivotalRequestHeaders = new Headers();
   pivotalRequestHeaders.append('X-TrackerToken', project.pivotalApiKey);
 
-  var url = 'https://www.pivotaltracker.com/services/v5/projects/'+project.pivotalId+'/stories?filter=mywork:' + project.pivotalUsername;
+  var url = 'https://www.pivotaltracker.com/services/v5/projects/'+project.pivotalId+'/stories?filter=state:started mywork:' + project.pivotalUsername;
 
   var request = new Request(url, { headers: pivotalRequestHeaders });
 
